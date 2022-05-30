@@ -17,6 +17,7 @@ func main() {
 
 	router.GET("/status", webController.GetStatus)
 	router.Static("/pictures", "./pictures")
+	router.Static("/js", "./js")
 
 	router.Run(config.APP_PORT)
 }
