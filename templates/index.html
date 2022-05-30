@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="15">
+    <title>Document</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container mx-auto">
+        <div class="row align-items-center">
+            <div class="col" style="height: 10em;">
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col">
+                <div class="card-group row-cols-md-3">
+                    <div class="card text-bg-primary">
+                        <img src="../pictures/water.png" class="card-img-top" alt="water" style="width: auto;height: 20em;">
+                        <div class="card-body">
+                          <h3 class="card-title text-center">Water</h3>
+                          <p class="card-text text-center">Water Value: {{.Status.Water}}</p>
+                          <h6 class="card-text text-center">Status Water: <span class="badge bg-warning text-dark">{{.Status.StatusWater}}</span></h6>
+                        </div>
+                    </div>
+                    
+                    <div class="card text-bg-success">
+                        <img src="../pictures/wind.png" class="card-img-top" alt="wind" style="width: auto;height: 20em;">
+                        <div class="card-body">
+                          <h3 class="card-title text-center">Wind</h3>
+                          <p class="card-text text-center">Wind Value: {{.Status.Wind}}</p>
+                          <h6 class="card-text text-center">Status Wind: <span class="badge bg-warning text-dark">{{.Status.StatusWind}}</span></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+
+</body>
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</html>
